@@ -10,6 +10,9 @@ public class Deck {
   private Card[] deck;
   private int topCard;
 
+  /**
+   * Constructor for the `Deck` class.
+   */
   public Deck() {
     // Init `topCard`
     topCard = 0;
@@ -26,7 +29,7 @@ public class Deck {
     shuffle(deck);
   }
 
-  /*
+  /**
    * Shuffles the deck of cards using the Fisher-Yates shuffle algorithm.
    *
    * @param deck the array of cards to shuffle.
@@ -45,7 +48,7 @@ public class Deck {
     topCard = 0;
   }
 
-  /*
+  /**
    * Draws and returns the next card.
    */
   public Card draw() {
@@ -56,14 +59,14 @@ public class Deck {
     }
   }
 
-  /*
+  /**
    * Returns the number of cards left in the deck.
    */
   public int cardsRemaining() {
     return deck.length - topCard;
   }
 
-  /*
+  /**
    * Checks if the deck is empty.
    *
    * @return true if the deck is empty, false otherwise.
